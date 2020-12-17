@@ -1,4 +1,5 @@
 function smoothedImg=smoothImg(img,segma)
+%convolution with the gaussian kernel for the smoothing of the image
 % Convolution de l'image avec le filtre gaussien 
 
 if nargin<2
