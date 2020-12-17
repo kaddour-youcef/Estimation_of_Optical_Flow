@@ -1,10 +1,16 @@
 function plotFlow(u, v, imgOriginal, rSize, scale)
+% u and v are the horizontal and vertical optical flow vectors,
+% respectively. imgOriginal, if supplied, is the first frame on which the
+% flow vectors would be plotted. use an empty matrix '[]' for no image.
+% rSize is the size of the region in which one vector is visible. scale
+% over-rules the auto scaling.
+%FR :
 % le flot optique est tracer sur une quiver
 % u et v sont les vecteurs de flux optique horizontal et vertical,
 % respectivement. imgOriginal, s'il est fourni, est le premier cadre sur lequel le Les vecteurs de flux
-% seraient tracés. utilisez une matrice vide '[]' pour aucune image.
-% rSize est la taille de la région dans laquelle un vecteur est visible. échelle
-% dépasse la mise à l'échelle automatique.
+% seraient tracÃ©s. utilisez une matrice vide '[]' pour aucune image.
+% rSize est la taille de la rÃ©gion dans laquelle un vecteur est visible. Ã©chelle
+% dÃ©passe la mise Ã  l'Ã©chelle automatique.
 
 if nargin>2
     if sum(sum(imgOriginal))~=0
