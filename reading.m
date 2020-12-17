@@ -1,3 +1,7 @@
+%unzip the Road file 
+%this .m is for the estimation of the Optical flow in a series of images 
+
+nbr_images = 199
 I0 = double(imread('0000.pgm'));
 alpha = 1
 ite=1
@@ -6,7 +10,7 @@ vInitial=0
 displayFlow =1
 
 
-for cptImage = 1:199
+for cptImage = 1:nbr_images
 	if(cptImage < 10)
 		nom = sprintf('000%d.pgm',cptImage);
 	elseif(cptImage<100)
