@@ -1,3 +1,5 @@
+%this file is fot a teste of the estimation of the optical flow on 2 images
+
 % -im1,im2 : two subsequent frames or images.
 % -alpha : a parameter that reflects the influence of the smoothness term.
 % -ite : number of iterations.
@@ -6,6 +8,7 @@
 % -displayFlow : 1 for display, 0 for no display ; default is 1.
 % -displayImg : specify the image on which the flow would appear ( use an
 % empty matrix "[]" for no image. )
+
 im1 = double(imread('Road/0000.pgm'));
 im2 = double(imread('Road/0001.pgm'));
 
