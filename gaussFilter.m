@@ -1,6 +1,8 @@
 function G=gaussFilter(segma,kSize)
-% Crée un filtre gaussien 1-D d'un écart type 'sigma' et d'une taille
-% «kSize».
+% Creates a 1-D Gaussian kernel of a standard deviation 'segma' and a size
+% of 'kSize'. 
+% CrÃ©e un filtre gaussien 1-D d'un Ã©cart type 'sigma' et d'une taille
+% Â«kSizeÂ».
 if nargin<1
     segma=1;
 end
